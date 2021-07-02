@@ -1,7 +1,7 @@
 # Credit_Risk_Analysis
 
 ## Overview
-In this analysis we are evaluating credit risk. We will need to employ different techniques to train and evaluate models with unbalanced classes. To do this we will use six different machine learning algorithms to undersample and oversample the data to reduce as much bias as possible. We will be using RandomOverSampler and SMOTE to oversample the data, ClusterCentroids to undersample the data, SMOTEENN to combine over- and undersampling, and BalancedRandomForestClassifier and EasyEnsembleClassifier to reduce bias.
+In this analysis we are evaluating credit risk. We will need to employ different techniques to train and evaluate models with unbalanced classes. To do this we will use six different machine learning algorithms to undersample and oversample the data to reduce as much bias as possible. We will be using RandomOverSampler and SMOTE to oversample the data, ClusterCentroids to undersample the data, SMOTEENN to combine over and undersampling, and BalancedRandomForestClassifier and EasyEnsembleClassifier to reduce bias.
 
 ## Results
 To analyze our results we will look at accuracy scores, precision scores, and recall scores of each algorithm.
@@ -10,7 +10,6 @@ To analyze our results we will look at accuracy scores, precision scores, and re
   accuracy score: 0.64  https://user-images.githubusercontent.com/79720084/123367817-3e9c8380-d540-11eb-837e-31bfc50a4f8d.png
   precision score: 1.0  
   recall score: 0.66  https://user-images.githubusercontent.com/79720084/123368299-2416da00-d541-11eb-8788-7ccbf4438cf8.png
-
 
 - SMOTE-  
   accuracy score: 0.615  https://user-images.githubusercontent.com/79720084/123367855-5542da80-d540-11eb-9a2a-c73df898d8cf.png
@@ -39,7 +38,7 @@ To analyze our results we will look at accuracy scores, precision scores, and re
 
 
 ## Summary
-
+Based on our results every machine learning algorithm has a precision score of 1.0. The algorithm with the lowest accuracy score and lowest recall score is ClusterCentroids which undersamples the data. The algorithm with the highest accuracy score and highest recall score is EasyEnsembleClassifier which is used to reduce bias. To rank algorithms with the highest scores to algorithms with the lowest scores, EasyEnsembleClassifier comes first followed by BalancedRandomForestClassifier, RandomOverSampler, SMOTEENN, SMOTE, and finally ClusterCentroids. The algorithms that help reduce bias were the algorithms that gave the highest scores, whereas the algorithm used to undersample the data had the lowest scores. I would recommend using the BalancedRandomForestClassifier to evaluate credit risk. This algorithm has one of the best accuracy and recall scores out of the other algorithms and it is easy to interpret. 
 
 
 
